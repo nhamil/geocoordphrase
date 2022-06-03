@@ -4,6 +4,7 @@ body {
 
 textarea {
     resize: none;
+    width: 40%; 
 }
 
 .hcenter {
@@ -11,4 +12,13 @@ textarea {
     width: 100%; 
     text-align: center;
     padding: 0px; 
+}
+
+@media only screen and (max-width : 1050px) {
+
+    textarea {
+        resize: none;
+        width: 95%; 
+    }
+
 }
