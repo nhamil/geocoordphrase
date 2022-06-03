@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='stylesheet' href='style.css'>
+
     <title>GeoCoordPhrase</title>
 </head>
 <body>
-    Geographic Coordinates: 
-    <br> 
-    <textarea id="coords" rows="15" cols="100"></textarea>
-    <br> 
-    <label for="resolution">Resolution:</label>
-    <select name="resolution" id="resolution">
-        <option>0 (~100 km)</option>
-        <option>1 (~10 km)</option>
-        <option>2 (~1 km)</option>
-        <option>3 (~100 m)</option>
-        <option selected="selected">4 (~10 m)</option>
-    </select>
-    <input type="button" value="To Phrase" onclick="toPhrase()"> 
-    <input type="button" value="To Coordinates" onclick="toCoords()">
-    <input type="button" value="Add Current Location" onclick="addUserLocation()">
-    <input type="button" value="Add Random Location" onclick="addRandomLocation()">
-    <input type="button" value="Clear" onclick="clearText()">
-    <br> 
-    Unique Phrase: 
-    <br> 
-    <textarea id="phrase" rows="15" cols="100"></textarea>
-
-    <script src="main.js"></script>
+    <div class="hcenter">
+        Geographic Coordinates: 
+        <br> 
+        <textarea id="coords" rows="15" cols="100"></textarea>
+        <br> 
+        <label for="resolution">Resolution:</label>
+        <select name="resolution" id="resolution">
+            <option>0 (~100 km)</option>
+            <option>1 (~10 km)</option>
+            <option>2 (~1 km)</option>
+            <option>3 (~100 m)</option>
+            <option selected="selected">4 (~10 m)</option>
+        </select>
+        <input type="button" value="To Phrase" onclick="toPhrase()"> 
+        <input type="button" value="To Coordinates" onclick="toCoords()">
+        <input type="button" value="Add Current Location" onclick="addUserLocation()">
+        <input type="button" value="Add Random Location" onclick="addRandomLocation()">
+        <input type="button" value="Clear" onclick="clearText()">
+        <br> 
+        Unique Phrase: 
+        <br> 
+        <textarea id="phrase" rows="15" cols="100"></textarea>
+    
+        <script src="main.js"></script>
+    </div>
 </body>
 </html>

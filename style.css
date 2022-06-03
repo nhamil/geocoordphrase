@@ -1,0 +1,14 @@
+body {
+    background-color: #def;
+}
+
+textarea {
+    resize: none;
+}
+
+.hcenter {
+    margin: auto; 
+    width: 100%; 
+    text-align: center;
+    padding: 0px; 
+}
